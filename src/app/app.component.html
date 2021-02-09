@@ -1,0 +1,8 @@
+<div>main parent</div>
+<h1>childone</h1>
+<app-child-one (messageEvent)=" recieveMessageFromChild($event)"  [childBtoparent]="childBtoparent"></app-child-one>
+ <h2 class="pt-4">childtwo</h2>
+<app-child-two [childatoparent]="childatoparent" (SendEvent)="sendMessageFromPtoC($event)"></app-child-two>
+
+
+    
